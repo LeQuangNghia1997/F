@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var sout; //khai báo biến sout
+    sout = "<table border='1' width='300' cellspacing='0' cellpadding='3'>"  //tạo bảng
+    for (i = 1; i <= 10; i++) { //Dòng for in ra 10 số đầu tiên
+        sout = sout + "<tr>";// in ra biến sout nằm ngang
+        for (j = 1; j <= 10; j++) { //Dòng for để chạy giá trị trong ô
+            sout = sout + "<td>" + i * j + "</td>"; // in ra giá trị trong ô
+        }
+        sout = sout + "</tr>";
+    }
+    sout = sout + "</table>";
+    document.write (sout);
+</script>
+</body>
+</html>
